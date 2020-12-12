@@ -1,5 +1,5 @@
 {
-  "name": "learn-starter",
+  "name": "pikaso-site",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,37 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^10.0.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "@samuelmeuli/font-manager": "^1.4.0",
+    "next": "^10.0.3",
+    "pikaso": "^1.0.0-beta.15",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-syntax-highlighter": "^15.4.3",
+    "react-use": "^15.3.4",
+    "styled-components": "^5.2.1",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.12",
+    "@types/react": "^17.0.0",
+    "@types/styled-components": "^5.1.5",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3"
   }
 }
