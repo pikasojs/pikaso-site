@@ -5,7 +5,7 @@ import { useFonts } from '../../hooks/use-fonts'
 
 import { delay } from '../../utils/delay'
 
-const defaultDelayValue = 1400
+const defaultDelayValue = 700
 
 export function useDemoInstructions(): [typeof ref] {
   const [ref, editor] = usePikaso()
