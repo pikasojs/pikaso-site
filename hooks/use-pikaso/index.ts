@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 
 import { useEffectOnce } from 'react-use'
 
-import Pikaso from '../../../pikaso-library'
+import Pikaso from 'pikaso'
 
 export function usePikaso(options: any = {}): [typeof ref, Pikaso] {
   const [editor, setEditor] = useState<Pikaso | null>(null)
