@@ -15,10 +15,10 @@ export function useDemoInstructions(): [typeof ref] {
     editor.board.background.fill('rgba(0, 0, 0, 0.5)')
     await delay(defaultDelayValue)
 
-    await editor.loadFromUrl('/images/wallpaper-1.jpeg')
+    await editor.loadFromUrl('/images/demo-wallpaper-1.jpeg')
     await delay(defaultDelayValue)
 
-    const photo = await editor.shapes.image.insert('/images/thinking.png')
+    const photo = await editor.shapes.image.insert('/images/guys.png')
     await delay(defaultDelayValue)
 
     photo.select()
@@ -91,7 +91,7 @@ export function useDemoInstructions(): [typeof ref] {
       },
       tag: {},
       text: {
-        text: 'Pikaso is here!',
+        text: 'Try Pikaso!',
         fontSize: 60,
         fill: '#fff',
         lineHeight: 1.5,

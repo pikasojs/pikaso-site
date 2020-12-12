@@ -56,7 +56,7 @@ editor.shapes.label.insert({
   },
   tag: {},
   text: {
-    text: 'Pikaso is here!',
+    text: 'Try Pikaso!',
     fontSize: 60,
     fill: '#fff',
     lineHeight: 1.5,
