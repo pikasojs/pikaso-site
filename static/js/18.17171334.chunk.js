@@ -1,0 +1,2 @@
+(this["webpackJsonppikaso-documentation"]=this["webpackJsonppikaso-documentation"]||[]).push([[18],{74:function(t,n,e){"use strict";e.r(n),e.d(n,"default",(function(){return o}));var i=e(2);function o(){return Object(i.jsx)("div",{children:"GetCenterPoint"})}}}]);
+//# sourceMappingURL=18.17171334.chunk.js.map

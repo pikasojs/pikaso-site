@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/Utilities/DegreeToRadian/index.tsx"],"names":["DegreeToRadian"],"mappings":"8LAAe,SAASA,IACtB,OAAO","file":"static/js/17.913a99bd.chunk.js","sourcesContent":["export default function DegreeToRadian() {\n  return <div>DegreeToRadian</div>\n}\n"],"sourceRoot":""}

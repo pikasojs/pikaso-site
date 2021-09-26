@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/Core/Filters/index.tsx"],"names":["Filters"],"mappings":"6LAAe,SAASA,IACtB,OAAO","file":"static/js/9.f511c33d.chunk.js","sourcesContent":["export default function Filters() {\n  return <div>Filters</div>\n}\n"],"sourceRoot":""}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/Core/Shapes/index.tsx"],"names":["Shapes"],"mappings":"8LAAe,SAASA,IACtB,OAAO","file":"static/js/15.0937900c.chunk.js","sourcesContent":["export default function Shapes() {\n  return <div>Shapes</div>\n}\n"],"sourceRoot":""}
