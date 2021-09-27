@@ -1,2 +1,0 @@
-(this["webpackJsonppikaso-documentation"]=this["webpackJsonppikaso-documentation"]||[]).push([[19],{75:function(t,n,i){"use strict";i.r(n),i.d(n,"default",(function(){return o}));var e=i(2);function o(){return Object(e.jsx)("div",{children:"GetPointsDistance"})}}}]);
-//# sourceMappingURL=19.feba5051.chunk.js.map

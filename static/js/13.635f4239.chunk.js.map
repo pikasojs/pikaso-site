@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Core/Rotation/index.tsx"],"names":["Rotation"],"mappings":"8LAAe,SAASA,IACtB,OAAO","file":"static/js/13.635f4239.chunk.js","sourcesContent":["export default function Rotation() {\n  return <div>Rotation</div>\n}\n"],"sourceRoot":""}

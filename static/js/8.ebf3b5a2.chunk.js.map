@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Core/Events/index.tsx"],"names":["Events"],"mappings":"6LAAe,SAASA,IACtB,OAAO","file":"static/js/8.ebf3b5a2.chunk.js","sourcesContent":["export default function Events() {\n  return <div>Events</div>\n}\n"],"sourceRoot":""}
