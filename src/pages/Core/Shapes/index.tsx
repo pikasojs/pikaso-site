@@ -6,6 +6,7 @@ import {
   CardContent,
   Typography
 } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 import { CodeHighlighter } from 'src/components/CodeHighlighter'
 
@@ -126,6 +127,15 @@ export default function Shapes() {
             </Button>
             <Button
               size="small"
+              component={Link}
+              color="primary"
+              variant="contained"
+              to="/core/shapes/methods?shape=circle"
+            >
+              Circle Methods
+            </Button>
+            <Button
+              size="small"
               target="_blank"
               variant="outlined"
               href="https://konvajs.org/api/Konva.Circle.html"
@@ -149,6 +159,16 @@ export default function Shapes() {
               }
             />
           </div>
+
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Rectangle
+            </Typography>
+
+            <CodeHighlighter showLineNumbers={false} language="typescript">
+              {codes.rect}
+            </CodeHighlighter>
+          </CardContent>
           <CardActions>
             <Button
               size="small"
@@ -158,6 +178,15 @@ export default function Shapes() {
               href="/api/classes/RectDrawer.html#insert"
             >
               Api Reference
+            </Button>
+            <Button
+              size="small"
+              component={Link}
+              color="primary"
+              variant="contained"
+              to="/core/shapes/methods?shape=rectangle"
+            >
+              Rectangle Methods
             </Button>
             <Button
               size="small"
@@ -204,6 +233,15 @@ export default function Shapes() {
             </Button>
             <Button
               size="small"
+              component={Link}
+              color="primary"
+              variant="contained"
+              to="/core/shapes/methods?shape=ellipse"
+            >
+              Ellipse Methods
+            </Button>
+            <Button
+              size="small"
               target="_blank"
               variant="outlined"
               href="https://konvajs.org/api/Konva.Ellipse.html"
@@ -243,6 +281,15 @@ export default function Shapes() {
               href="/api/classes/TriangleDrawer.html#insert"
             >
               Api Reference
+            </Button>
+            <Button
+              size="small"
+              component={Link}
+              color="primary"
+              variant="contained"
+              to="/core/shapes/methods?shape=triangle"
+            >
+              Triangle Methods
             </Button>
             <Button
               size="small"
@@ -286,6 +333,15 @@ export default function Shapes() {
               href="/api/classes/PolygonDrawer.html#insert"
             >
               Api Reference
+            </Button>
+            <Button
+              size="small"
+              component={Link}
+              color="primary"
+              variant="contained"
+              to="/core/shapes/methods?shape=polygon"
+            >
+              Polygon Methods
             </Button>
             <Button
               size="small"
@@ -346,6 +402,15 @@ export default function Shapes() {
             </Button>
             <Button
               size="small"
+              component={Link}
+              color="primary"
+              variant="contained"
+              to="/core/shapes/methods?shape=line"
+            >
+              Line Methods
+            </Button>
+            <Button
+              size="small"
               target="_blank"
               variant="outlined"
               href="https://konvajs.org/api/Konva.Line.html"
@@ -400,6 +465,15 @@ export default function Shapes() {
               href="/api/classes/ArrowDrawer.html#insert"
             >
               Api Reference
+            </Button>
+            <Button
+              size="small"
+              component={Link}
+              color="primary"
+              variant="contained"
+              to="/core/shapes/methods?shape=arrow"
+            >
+              Arrow Methods
             </Button>
             <Button
               size="small"
