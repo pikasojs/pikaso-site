@@ -4,6 +4,7 @@ import { Markdown } from 'src/components/Markdown'
 
 import { LoadFromFile } from './LoadFromFile'
 import { LoadFromUrl } from './LoadFromUrl'
+import { FillBackground } from './FillBackground'
 
 export default function Background() {
   return (
@@ -25,6 +26,10 @@ export default function Background() {
 
       <Box my={10}>
         <LoadFromFile />
+      </Box>
+
+      <Box my={10}>
+        <FillBackground />
       </Box>
     </>
   )

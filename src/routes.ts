@@ -40,6 +40,14 @@ export const Routes = {
         url: '/core/drawing'
       },
       {
+        title: 'Image',
+        url: '/core/image'
+      },
+      {
+        title: 'Text',
+        url: '/core/text'
+      },
+      {
         title: 'Cropper',
         url: '/core/cropper'
       },

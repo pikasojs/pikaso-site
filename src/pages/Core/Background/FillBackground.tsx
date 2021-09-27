@@ -1,32 +1,30 @@
 import { Box, Button } from '@mui/material'
+import { useEffect } from 'react'
 
 import { CodeHighlighter } from 'src/components/CodeHighlighter'
-
 import { Markdown } from 'src/components/Markdown'
-
 import usePikaso from 'src/hooks/use-pikaso'
+import { getRandomColor } from 'src/utils/get-random-color'
 
-const code = `// load image from url
-editor.board.background.setImageFromUrl('<ImageUrl>')
+const code = `// change background color
+editor.board.background.fill('#262626')`
 
-// Alternatively, you may use
-editor.loadFromUrl('<ImageUrl>')`
-
-export function LoadFromUrl() {
+export function FillBackground() {
   const [ref, editor] = usePikaso()
 
-  const handleLoadRandomBackground = () => {
-    editor?.board.background.setImageFromUrl(
-      `https://source.unsplash.com/random?hash=${Math.random()}`
-    )
+  useEffect(() => {
+    editor?.board.background.fill(getRandomColor())
+  }, [editor])
+
+  const handleChangeColor = () => {
+    editor?.board.background.fill(getRandomColor())
   }
 
   return (
     <>
-      <a id="load-image-from-url"></a>
       <Markdown>
         {() => `
-        ### [setImageFromUrl](/api/classes/Background.html#setImageFromUrl)
+        ### [fill](/api/classes/Background.html#fill)
       `}
       </Markdown>
 
@@ -45,12 +43,8 @@ export function LoadFromUrl() {
       <CodeHighlighter language="typescript">{code}</CodeHighlighter>
 
       <Box my={2}>
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={handleLoadRandomBackground}
-        >
-          Load Random Background
+        <Button variant="contained" onClick={handleChangeColor}>
+          Change Background Color
         </Button>
       </Box>
     </>

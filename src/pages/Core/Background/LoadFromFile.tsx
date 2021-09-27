@@ -25,10 +25,9 @@ export function LoadFromFile() {
 
   return (
     <>
-      <a id="load-image-from-file"></a>
       <Markdown>
         {() => `
-        ### [Load image from file](#load-image-from-file)
+        ### [setImageFromFile](/api/classes/Background.html#setImageFromFile)
       `}
       </Markdown>
 
