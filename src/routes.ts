@@ -9,7 +9,12 @@ type Routes = Record<
   {
     title: string
     Icon: React.ReactNode
-    links: { title: string; url: string; exact?: boolean }[]
+    links: {
+      title: string
+      url: string
+      path?: string
+      exact?: boolean
+    }[]
   }
 >
 
@@ -42,7 +47,8 @@ export const Routes: Routes = {
       },
       {
         title: 'Shapes',
-        url: '/core/shapes/:shape?',
+        path: '/core/shapes/:shape?',
+        url: '/core/shapes',
         exact: false
       },
       {
@@ -144,7 +150,7 @@ export const RouterComponents = Object.values(Routes).flatMap(section =>
     const [directoryId, pageId] = item.url.substring(1).split('/')
 
     return {
-      url: item.url,
+      url: item.path ?? item.url,
       exact: item.exact ?? true,
       Component: lazy(
         () =>
