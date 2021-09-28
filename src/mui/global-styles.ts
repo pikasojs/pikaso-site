@@ -21,6 +21,12 @@ export const useGlobalStyle = makeStyles((theme: Theme) => ({
     '.main-container :is(h1, h2, h3)': {
       borderBottom: `1px solid ${theme.palette.grey['300']}`,
       paddingBottom: theme.spacing(0.5)
+    },
+    'a[target="_blank"]': {
+      '&::after': {
+        fontSize: theme.spacing(1.5),
+        content: '" 🔗"'
+      }
     }
   }
 }))

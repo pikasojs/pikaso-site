@@ -9,7 +9,7 @@ import {
   Drawer
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
-import { Route, Switch } from 'react-router'
+import { Redirect, Route, Switch } from 'react-router'
 
 import { LayoutDrawer } from './LayoutDrawer'
 import { RouterComponents } from '../../routes'
@@ -99,6 +99,10 @@ export function AppLayout() {
         <div className="main-container">
           <Suspense fallback={<div>Loading...</div>}>
             <Switch>
+              <Route exact path="/">
+                <Redirect to="/getting-started/pikaso" />
+              </Route>
+
               {RouterComponents.map(({ Component, url, exact }, index) => (
                 <Route
                   key={index}

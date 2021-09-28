@@ -4,17 +4,20 @@ import ReceiptIcon from '@mui/icons-material/Receipt'
 import AppsIcon from '@mui/icons-material/Apps'
 import SettingsIcon from '@mui/icons-material/Settings'
 
-type Routes = Record<
+export interface RouteLink {
+  title: string
+  url: string
+  external?: boolean
+  path?: string
+  exact?: boolean
+}
+
+export type Routes = Record<
   string,
   {
     title: string
     Icon: React.ReactNode
-    links: {
-      title: string
-      url: string
-      path?: string
-      exact?: boolean
-    }[]
+    links: RouteLink[]
   }
 >
 
@@ -23,6 +26,10 @@ export const Routes: Routes = {
     title: 'Getting Started',
     Icon: ReceiptIcon,
     links: [
+      {
+        title: 'Pikaso',
+        url: '/getting-started/pikaso'
+      },
       {
         title: 'Installation',
         url: '/getting-started/installation'
@@ -36,6 +43,7 @@ export const Routes: Routes = {
         url: '/getting-started/configuration'
       },
       {
+        external: true,
         title: 'Api Reference',
         url: '/api'
       }
@@ -156,6 +164,7 @@ export const RouterComponents = Object.values(Routes).flatMap(section =>
     return {
       url: item.path ?? item.url,
       exact: item.exact ?? true,
+      external: item.external ?? false,
       Component: lazy(
         () =>
           import(

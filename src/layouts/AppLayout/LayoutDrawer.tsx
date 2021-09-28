@@ -11,7 +11,7 @@ import { Link, useLocation } from 'react-router-dom'
 import type { Theme } from '@mui/material'
 import cn from 'classnames'
 
-import { Routes } from '../../routes'
+import { RouteLink, Routes } from '../../routes'
 
 const useStyles = makeStyles(
   (theme: Theme) => ({
@@ -53,6 +53,10 @@ export function LayoutDrawer() {
   const classes = useStyles()
   const { pathname } = useLocation()
 
+  const isActiveLink = (link: RouteLink) => {
+    return pathname.startsWith(link.url)
+  }
+
   return (
     <div>
       <Toolbar>
@@ -75,13 +79,23 @@ export function LayoutDrawer() {
                 {section.links.map(link => (
                   <ListItem
                     className={cn(classes.listItem, {
-                      active: pathname.startsWith(link.url)
+                      active: isActiveLink(link)
                     })}
                     key={link.title}
                   >
-                    <Link className={cn(classes.listItemLink)} to={link.url}>
-                      {link.title}
-                    </Link>
+                    {link.external ? (
+                      <a
+                        className={classes.listItemLink}
+                        href={link.url}
+                        target="_blank"
+                      >
+                        {link.title}
+                      </a>
+                    ) : (
+                      <Link className={classes.listItemLink} to={link.url}>
+                        {link.title}
+                      </Link>
+                    )}
                   </ListItem>
                 ))}
               </List>
