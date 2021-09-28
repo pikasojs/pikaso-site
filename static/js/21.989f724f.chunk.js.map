@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/Utilities/GetCenterPoint/index.tsx"],"names":["GetCenterPoint"],"mappings":"8LAAe,SAASA,IACtB,OAAO","file":"static/js/21.989f724f.chunk.js","sourcesContent":["export default function GetCenterPoint() {\n  return <div>GetCenterPoint</div>\n}\n"],"sourceRoot":""}

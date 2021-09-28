@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/Utilities/CreateImageFromUrl/index.tsx"],"names":["CreateImageFromUrl"],"mappings":"8LAAe,SAASA,IACtB,OAAO","file":"static/js/19.8cdd10ea.chunk.js","sourcesContent":["export default function CreateImageFromUrl() {\n  return <div>CreateImageFromUrl</div>\n}\n"],"sourceRoot":""}

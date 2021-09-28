@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/Utilities/GetRotatedPoint/index.tsx"],"names":["GetRotatedPoint"],"mappings":"8LAAe,SAASA,IACtB,OAAO","file":"static/js/23.d093799c.chunk.js","sourcesContent":["export default function GetRotatedPoint() {\n  return <div>GetRotatedPoint</div>\n}\n"],"sourceRoot":""}

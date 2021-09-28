@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Core/Drawing/index.tsx"],"names":["Drawing"],"mappings":"6LAAe,SAASA,IACtB,OAAO","file":"static/js/9.39dc2cdf.chunk.js","sourcesContent":["export default function Drawing() {\n  return <div>Drawing</div>\n}\n"],"sourceRoot":""}

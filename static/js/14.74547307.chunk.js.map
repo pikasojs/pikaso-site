@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Core/Image/index.tsx"],"names":["Image"],"mappings":"8LAAe,SAASA,IACtB,OAAO","file":"static/js/14.74547307.chunk.js","sourcesContent":["export default function Image() {\n  return <div>TBD</div>\n}\n"],"sourceRoot":""}

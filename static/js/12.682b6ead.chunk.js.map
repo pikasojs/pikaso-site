@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/Core/Flip/index.tsx"],"names":["Flip"],"mappings":"8LAAe,SAASA,IACtB,OAAO","file":"static/js/12.682b6ead.chunk.js","sourcesContent":["export default function Flip() {\n  return <div>Flip</div>\n}\n"],"sourceRoot":""}

@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Core/History/index.tsx"],"names":["History"],"mappings":"8LAAe,SAASA,IACtB,OAAO","file":"static/js/13.d168dfb3.chunk.js","sourcesContent":["export default function History() {\n  return <div>History</div>\n}\n"],"sourceRoot":""}

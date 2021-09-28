@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/Core/Text/index.tsx"],"names":["Text"],"mappings":"8LAAe,SAASA,IACtB,OAAO","file":"static/js/18.504e099c.chunk.js","sourcesContent":["export default function Text() {\n  return <div>TBD</div>\n}\n"],"sourceRoot":""}
