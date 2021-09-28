@@ -1,10 +1,19 @@
-import { lazy } from 'react'
+import React, { lazy } from 'react'
 
 import ReceiptIcon from '@mui/icons-material/Receipt'
 import AppsIcon from '@mui/icons-material/Apps'
 import SettingsIcon from '@mui/icons-material/Settings'
 
-export const Routes = {
+type Routes = Record<
+  string,
+  {
+    title: string
+    Icon: React.ReactNode
+    links: { title: string; url: string; exact?: boolean }[]
+  }
+>
+
+export const Routes: Routes = {
   GettingStarted: {
     title: 'Getting Started',
     Icon: ReceiptIcon,
@@ -33,7 +42,8 @@ export const Routes = {
       },
       {
         title: 'Shapes',
-        url: '/core/shapes'
+        url: '/core/shapes/:shape?',
+        exact: false
       },
       {
         title: 'Drawing',
@@ -135,6 +145,7 @@ export const RouterComponents = Object.values(Routes).flatMap(section =>
 
     return {
       url: item.url,
+      exact: item.exact ?? true,
       Component: lazy(
         () =>
           import(

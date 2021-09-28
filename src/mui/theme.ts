@@ -10,6 +10,8 @@ export const theme = createTheme({
     }
   },
   typography: {
+    fontFamily: 'Lato',
+    fontSize: 14,
     button: {
       textTransform: 'none'
     }

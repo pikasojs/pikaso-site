@@ -99,8 +99,13 @@ export function AppLayout() {
         <div className="main-container">
           <Suspense fallback={<div>Loading...</div>}>
             <Switch>
-              {RouterComponents.map(({ Component, url }, index) => (
-                <Route key={index} exact path={url} component={Component} />
+              {RouterComponents.map(({ Component, url, exact }, index) => (
+                <Route
+                  key={index}
+                  exact={exact}
+                  path={url}
+                  component={Component}
+                />
               ))}
             </Switch>
           </Suspense>

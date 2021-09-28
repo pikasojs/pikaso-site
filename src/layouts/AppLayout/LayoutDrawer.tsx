@@ -75,7 +75,7 @@ export function LayoutDrawer() {
                 {section.links.map(link => (
                   <ListItem
                     className={cn(classes.listItem, {
-                      active: link.url === pathname
+                      active: pathname.startsWith(link.url)
                     })}
                     key={link.title}
                   >

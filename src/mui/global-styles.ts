@@ -4,8 +4,12 @@ import type { Theme } from '@mui/material'
 
 export const useGlobalStyle = makeStyles((theme: Theme) => ({
   '@global': {
+    body: {
+      fontFamily: 'Lato'
+    },
     code: {
-      fontFamily: 'roboto',
+      fontFamily: 'Lato',
+      fontSize: '15px !important',
       background: '#eee',
       padding: theme.spacing(1),
       borderRadius: theme.shape.borderRadius
