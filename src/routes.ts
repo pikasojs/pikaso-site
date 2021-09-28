@@ -34,6 +34,10 @@ export const Routes: Routes = {
       {
         title: 'Configuration',
         url: '/getting-started/configuration'
+      },
+      {
+        title: 'Api Reference',
+        url: '/api'
       }
     ]
   },
