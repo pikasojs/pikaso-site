@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/Core/Shapes/ShapeModels/Arrow.tsx"],"names":["ArrowModel"],"mappings":"+LAAe,SAASA,IACtB,OAAO","file":"static/js/30.9fbc1b8c.chunk.js","sourcesContent":["export default function ArrowModel() {\n  return <div>TBD</div>\n}\n"],"sourceRoot":""}

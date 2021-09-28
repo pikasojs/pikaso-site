@@ -1,0 +1,2 @@
+(this["webpackJsonppikaso-documentation"]=this["webpackJsonppikaso-documentation"]||[]).push([[24],{79:function(t,n,i){"use strict";i.r(n),i.d(n,"default",(function(){return e}));var o=i(2);function e(){return Object(o.jsx)("div",{children:"GetRotatedPoint"})}}}]);
+//# sourceMappingURL=24.e7be481b.chunk.js.map

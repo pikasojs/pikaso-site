@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/Core/Shapes/ShapeModels/Triangle.tsx"],"names":["TriangleModel"],"mappings":"+LAAe,SAASA,IACtB,OAAO","file":"static/js/34.057a4adc.chunk.js","sourcesContent":["export default function TriangleModel() {\n  return <div>TBD</div>\n}\n"],"sourceRoot":""}

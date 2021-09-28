@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/Utilities/Omit/index.tsx"],"names":["Omit"],"mappings":"8LAAe,SAASA,IACtB,OAAO","file":"static/js/28.5cd26cf5.chunk.js","sourcesContent":["export default function Omit() {\n  return <div>Omit</div>\n}\n"],"sourceRoot":""}
