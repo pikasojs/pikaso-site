@@ -16,6 +16,7 @@
     "@types/react": "^17.0.26",
     "@types/react-dom": "^17.0.9",
     "classnames": "^2.3.1",
+    "pikaso": "file:../pikaso-library",
     "raw.macro": "^0.4.2",
     "react": "^17.0.2",
     "react-color": "^2.19.3",

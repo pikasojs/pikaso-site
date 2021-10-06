@@ -193,7 +193,7 @@ export default function Shapes() {
         <>
           <Markdown>
             {() => `
-          # Shapes
+          # [Shapes](/api/classes/ShapeModel.html)
           Pikaso comes with a few built-in shapes but it's possible to extend [Shape Drawer](/api/classes/ShapeDrawer.html) and [Shape Model](/api/classes/ShapeModel.html) to develop custom shapes.
 
           [Background](/core/background), [Image](/core/image) and [Text](/core/text) are also considered as [Shape Model](/api/classes/ShapeModel.html), inheriting all of its methods and properties.
