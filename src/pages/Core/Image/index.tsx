@@ -1,10 +1,11 @@
 import { useEffect } from 'react'
-import { Box } from '@mui/material'
+import { Button, Box } from '@mui/material'
 import raw from 'raw.macro'
 
 import usePikaso from 'src/hooks/use-pikaso'
 
 import { Markdown } from 'src/components/Markdown'
+import { getRandomNumber } from 'src/utils/get-random-number'
 
 const doc = raw('./doc.md')
 
@@ -20,23 +21,20 @@ export default function Image() {
 
   useEffect(() => {
     if (editor) {
-      editor.shapes.image.insert(
-        `https://source.unsplash.com/random?rand=${Math.random()}`,
-        {
-          x: 100,
-          y: 100
-        }
-      )
-
-      editor.shapes.image.insert(
-        `https://source.unsplash.com/random?rand=${Math.random()}`,
-        {
-          x: 600,
-          y: 100
-        }
-      )
+      addRandomImage()
     }
   }, [editor])
+
+  const addRandomImage = () => {
+    editor?.shapes.image.insert(
+      `https://source.unsplash.com/random/200x200random?rand=${Math.random()}`,
+      {
+        x: getRandomNumber(0, editor.board.stage.width() - 100),
+        y: getRandomNumber(0, editor.board.stage.height() - 100),
+        drawBorder: true
+      }
+    )
+  }
 
   return (
     <div>
@@ -52,6 +50,17 @@ export default function Image() {
             height: '300px'
           }}
         />
+      </Box>
+
+      <Box display="flex" justifyContent="flex-end">
+        <Button
+          variant="contained"
+          color="primary"
+          size="small"
+          onClick={addRandomImage}
+        >
+          Add Random Image
+        </Button>
       </Box>
     </div>
   )
