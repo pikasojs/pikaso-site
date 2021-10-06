@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Core/Shapes/ShapeModels/Rect.tsx"],"names":["RectModel"],"mappings":"+LAAe,SAASA,IACtB,OAAO","file":"static/js/33.c5f128b7.chunk.js","sourcesContent":["export default function RectModel() {\n  return <div>TBD</div>\n}\n"],"sourceRoot":""}

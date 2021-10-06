@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Core/Selection/index.tsx"],"names":["Selection"],"mappings":"8LAAe,SAASA,IACtB,OAAO","file":"static/js/17.e5f51752.chunk.js","sourcesContent":["export default function Selection() {\n  return <div>Selection</div>\n}\n"],"sourceRoot":""}

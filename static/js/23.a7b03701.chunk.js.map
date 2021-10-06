@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Utilities/GetPointsDistance/index.tsx"],"names":["GetPointsDistance"],"mappings":"8LAAe,SAASA,IACtB,OAAO","file":"static/js/23.a7b03701.chunk.js","sourcesContent":["export default function GetPointsDistance() {\n  return <div>GetPointsDistance</div>\n}\n"],"sourceRoot":""}

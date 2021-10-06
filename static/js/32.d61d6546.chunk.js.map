@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Core/Shapes/ShapeModels/Polygon.tsx"],"names":["PolygonModel"],"mappings":"+LAAe,SAASA,IACtB,OAAO","file":"static/js/32.d61d6546.chunk.js","sourcesContent":["export default function PolygonModel() {\n  return <div>TBD</div>\n}\n"],"sourceRoot":""}

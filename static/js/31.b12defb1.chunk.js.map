@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Core/Shapes/ShapeModels/Line.tsx"],"names":["LineModel"],"mappings":"+LAAe,SAASA,IACtB,OAAO","file":"static/js/31.b12defb1.chunk.js","sourcesContent":["export default function LineModel() {\n  return <div>TBD</div>\n}\n"],"sourceRoot":""}

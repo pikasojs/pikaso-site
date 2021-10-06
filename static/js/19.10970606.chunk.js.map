@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/GettingStarted/Pikaso/index.tsx"],"names":["Pikaso"],"mappings":"8LAAe,SAASA,IACtB,OAAO","file":"static/js/19.10970606.chunk.js","sourcesContent":["export default function Pikaso() {\n  return <div>TBD</div>\n}\n"],"sourceRoot":""}
