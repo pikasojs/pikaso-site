@@ -1,7 +1,5 @@
-<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 
- <g>
-  <title>Layer 1</title>
-  <ellipse stroke-width="2" stroke="#000" ry="150" rx="150" id="svg_1" cy="200" cx="200" fill="#FFAFCC"/>
- </g>
+<circle fill="#FF0000" cx="200" cy="200" r="180" stroke-width="2" stroke="#000"/>
+
 </svg>

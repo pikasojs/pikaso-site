@@ -1,5 +1,16 @@
-import { Box, Button } from '@mui/material'
 import { useEffect } from 'react'
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Card,
+  Box,
+  Button,
+  Typography,
+  CardActions,
+  CardContent
+} from '@mui/material'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 import { CodeHighlighter } from 'src/components/CodeHighlighter'
 import { Markdown } from 'src/components/Markdown'
@@ -21,32 +32,41 @@ export function FillBackground() {
   }
 
   return (
-    <>
-      <Markdown>
-        {() => `
-        ### [fill](/api/classes/Background.html#fill)
-      `}
-      </Markdown>
+    <Accordion>
+      <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+        <Typography variant="h6" sx={{ width: '30%', flexShrink: 0 }}>
+          fill
+        </Typography>
+      </AccordionSummary>
+      <AccordionDetails>
+        <Card sx={{ mb: 4 }}>
+          <Box my={1}>
+            <div
+              ref={ref}
+              style={{
+                margin: '0 auto',
+                background: '#f5f5f5',
+                width: '250px',
+                height: '250px'
+              }}
+            />
+          </Box>
 
-      <Box my={1}>
-        <div
-          ref={ref}
-          style={{
-            margin: '0 auto',
-            background: '#f5f5f5',
-            width: '250px',
-            height: '250px'
-          }}
-        />
-      </Box>
-
-      <CodeHighlighter language="typescript">{code}</CodeHighlighter>
-
-      <Box my={2}>
-        <Button variant="contained" onClick={handleChangeColor}>
-          Change Background Color
-        </Button>
-      </Box>
-    </>
+          <CardActions sx={{ justifyContent: 'flex-end' }}>
+            <Button variant="contained" onClick={handleChangeColor}>
+              Change Background Color
+            </Button>
+          </CardActions>
+          <CardContent>
+            <Typography gutterBottom variant="h6" component="div">
+              <Markdown>
+                {() => `[fill](/api/classes/Background.html#fill) `}
+              </Markdown>
+            </Typography>
+            <CodeHighlighter language="typescript">{code}</CodeHighlighter>
+          </CardContent>
+        </Card>
+      </AccordionDetails>
+    </Accordion>
   )
 }

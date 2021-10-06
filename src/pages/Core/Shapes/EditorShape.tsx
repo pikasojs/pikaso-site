@@ -1,22 +1,34 @@
-import { useEffect } from 'react'
+import { ForwardedRef, forwardRef, useEffect, useImperativeHandle } from 'react'
 import type { Pikaso } from 'pikaso'
 
 import usePikaso from 'src/hooks/use-pikaso'
 
-interface Props {
-  onLoad: (editor: Pikaso) => void
+export interface EditorRef {
+  editor: Pikaso | null
 }
 
-export function EditorShape({ onLoad }: Props) {
+interface Props {
+  onLoad: (editor: Pikaso) => void
+  editorRef?: ForwardedRef<EditorRef>
+}
+
+function Editor({ editorRef, onLoad }: Props) {
   const [ref, editor] = usePikaso({
-    transformer: {
-      borderStroke: '#262626'
+    selection: {
+      transformer: {
+        borderStroke: '#262626',
+        anchorFill: '#262626'
+      }
     }
   })
 
   useEffect(() => {
     editor && onLoad(editor)
   }, [editor])
+
+  useImperativeHandle(editorRef, () => ({
+    editor
+  }))
 
   return (
     <div
@@ -30,3 +42,7 @@ export function EditorShape({ onLoad }: Props) {
     />
   )
 }
+
+export const EditorShape = forwardRef((props: Props, ref) => {
+  return <Editor {...props} />
+})

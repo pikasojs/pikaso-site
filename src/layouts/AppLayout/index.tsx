@@ -11,15 +11,35 @@ import {
 import MenuIcon from '@mui/icons-material/Menu'
 import { Redirect, Route, Switch } from 'react-router'
 
+import { useEffectOnce } from 'react-use'
+
 import { LayoutDrawer } from './LayoutDrawer'
 import { RouterComponents } from '../../routes'
 
 const drawerWidth = 260
 
 export function AppLayout() {
+  const [pageTitle, setPageTitle] = useState('Pikaso - Documentation')
+
   const [mobileOpen, setMobileOpen] = useState(false)
 
   const handleToggleDrawer = () => setMobileOpen(state => !state)
+
+  useEffectOnce(() => {
+    const observer = new MutationObserver(mutations => {
+      setPageTitle(mutations[0].target.textContent?.replace('|', ' - ') || '')
+    })
+
+    observer.observe(document.querySelector('title')!, {
+      subtree: true,
+      characterData: true,
+      childList: true
+    })
+
+    return () => {
+      observer.disconnect()
+    }
+  })
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -44,7 +64,7 @@ export function AppLayout() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Pikaso - Documentation
+            {pageTitle}
           </Typography>
         </Toolbar>
       </AppBar>

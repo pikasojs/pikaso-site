@@ -1,4 +1,15 @@
-import { Box, Button } from '@mui/material'
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Card,
+  Box,
+  Button,
+  Typography,
+  CardActions,
+  CardContent
+} from '@mui/material'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 
 import { CodeHighlighter } from 'src/components/CodeHighlighter'
 
@@ -17,42 +28,52 @@ export function LoadFromUrl() {
 
   const handleLoadRandomBackground = () => {
     editor?.board.background.setImageFromUrl(
-      `https://source.unsplash.com/random?hash=${Math.random()}`
+      `https://source.unsplash.com/random1000x400?hash=${Math.random()}`
     )
   }
 
   return (
-    <>
-      <a id="load-image-from-url"></a>
-      <Markdown>
-        {() => `
-        ### [setImageFromUrl](/api/classes/Background.html#setImageFromUrl)
-      `}
-      </Markdown>
+    <Accordion>
+      <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+        <Typography variant="h6" sx={{ width: '30%', flexShrink: 0 }}>
+          loadFromUrl
+        </Typography>
+      </AccordionSummary>
+      <AccordionDetails>
+        <Card sx={{ mb: 4 }}>
+          <Box my={1}>
+            <div
+              ref={ref}
+              style={{
+                margin: '0 auto',
+                background: '#f5f5f5',
+                width: '250px',
+                height: '250px'
+              }}
+            />
+          </Box>
 
-      <Box my={1}>
-        <div
-          ref={ref}
-          style={{
-            margin: '0 auto',
-            background: '#f5f5f5',
-            width: '250px',
-            height: '250px'
-          }}
-        />
-      </Box>
-
-      <CodeHighlighter language="typescript">{code}</CodeHighlighter>
-
-      <Box my={2}>
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={handleLoadRandomBackground}
-        >
-          Load Random Background
-        </Button>
-      </Box>
-    </>
+          <CardActions sx={{ justifyContent: 'flex-end' }}>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={handleLoadRandomBackground}
+            >
+              Load Random Background
+            </Button>
+          </CardActions>
+          <CardContent>
+            <Typography gutterBottom variant="h6" component="div">
+              <Markdown>
+                {() =>
+                  `[setImageFromUrl](/api/classes/Background.html#setImageFromUrl)`
+                }
+              </Markdown>
+            </Typography>
+            <CodeHighlighter language="typescript">{code}</CodeHighlighter>
+          </CardContent>
+        </Card>
+      </AccordionDetails>
+    </Accordion>
   )
 }

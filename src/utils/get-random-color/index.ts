@@ -1,3 +1,7 @@
 export function getRandomColor() {
-  return '#' + (((1 << 24) * Math.random()) | 0).toString(16)
+  const o = Math.round,
+    r = Math.random,
+    s = 255
+
+  return 'rgb(' + o(r() * s) + ',' + o(r() * s) + ',' + o(r() * s) + ')'
 }

@@ -45,7 +45,7 @@ export const Routes: Routes = {
       {
         external: true,
         title: 'Api Reference',
-        url: '/api'
+        url: '/api/classes/Pikaso.html'
       }
     ]
   },
@@ -64,16 +64,16 @@ export const Routes: Routes = {
         exact: false
       },
       {
-        title: 'Drawing',
-        url: '/core/drawing'
-      },
-      {
         title: 'Image',
         url: '/core/image'
       },
       {
-        title: 'Text',
-        url: '/core/text'
+        title: 'Label',
+        url: '/core/label'
+      },
+      {
+        title: 'Drawing',
+        url: '/core/drawing'
       },
       {
         title: 'Cropper',

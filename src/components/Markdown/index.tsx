@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import ReactMarkdown from 'react-markdown'
 import gfm from 'remark-gfm'
+import { Link } from 'react-router-dom'
 
 import { CodeHighlighter } from '../CodeHighlighter'
 
@@ -41,8 +42,19 @@ export function Markdown({ children }: Props) {
     <ReactMarkdown
       remarkPlugins={[gfm]}
       children={normalized}
-      linkTarget="_blank"
       components={{
+        a({ href, children }) {
+          const isExternalLink =
+            href?.startsWith('/api/') || href?.startsWith('http')
+
+          return isExternalLink ? (
+            <a href={href} target="_blank">
+              {children}
+            </a>
+          ) : (
+            <Link to={href!}>{children}</Link>
+          )
+        },
         code({ node, inline, className, children, ...props }) {
           const match = /language-(\w+)/.exec(className || '')
           return !inline && match ? (
