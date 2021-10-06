@@ -109,6 +109,28 @@ export const Routes: Routes = {
       }
     ]
   },
+  Tutorials: {
+    title: 'Tutorials',
+    Icon: SettingsIcon,
+    links: [
+      {
+        title: 'Create Custom Shapes',
+        url: '/tutorials/create-custom-shapes'
+      },
+      {
+        title: 'Create Filter Presets',
+        url: '/tutorials/create-filter-presets'
+      },
+      {
+        title: 'Crop Transformer Auto Color',
+        url: '/tutorials/crop-transformer-auto-color'
+      },
+      {
+        title: 'Face Detector Cropping',
+        url: '/tutorials/crop-face-detect'
+      }
+    ]
+  },
   Utilities: {
     title: 'Utilities',
     Icon: SettingsIcon,

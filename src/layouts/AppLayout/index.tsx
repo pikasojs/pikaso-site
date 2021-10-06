@@ -16,7 +16,7 @@ import { useEffectOnce } from 'react-use'
 import { LayoutDrawer } from './LayoutDrawer'
 import { RouterComponents } from '../../routes'
 
-const drawerWidth = 260
+const drawerWidth = 300
 
 export function AppLayout() {
   const [pageTitle, setPageTitle] = useState('Pikaso - Documentation')

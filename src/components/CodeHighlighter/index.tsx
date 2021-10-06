@@ -1,7 +1,7 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { materialDark as theme } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { dracula as theme } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
-//cb
+// materialDark
 
 import type { SyntaxHighlighterProps } from 'react-syntax-highlighter'
 

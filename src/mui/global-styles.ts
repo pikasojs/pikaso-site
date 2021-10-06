@@ -22,6 +22,22 @@ export const useGlobalStyle = makeStyles((theme: Theme) => ({
       borderBottom: `1px solid ${theme.palette.grey['300']}`,
       paddingBottom: theme.spacing(0.5)
     },
+    table: {
+      display: 'block',
+      maxWidth: '100%',
+      overflow: 'auto',
+      border: '1px solid #f5f5f5',
+      '& thead tr th': {
+        borderBottom: '1px solid #ccc',
+        padding: theme.spacing(1)
+      },
+      '& tbody tr:nth-child(even)': {
+        backgroundColor: '#f5f5f5'
+      },
+      '& tbody tr td': {
+        padding: theme.spacing(1)
+      }
+    },
     'a[target="_blank"]': {
       '&::after': {
         fontSize: theme.spacing(1.5),

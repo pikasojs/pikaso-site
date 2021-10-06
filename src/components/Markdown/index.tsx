@@ -40,6 +40,7 @@ export function Markdown({ children }: Props) {
 
   return (
     <ReactMarkdown
+      skipHtml
       remarkPlugins={[gfm]}
       children={normalized}
       components={{
