@@ -28,7 +28,7 @@ export function LoadFromUrl() {
 
   const handleLoadRandomBackground = () => {
     editor?.board.background.setImageFromUrl(
-      `https://source.unsplash.com/random1000x400?hash=${Math.random()}`
+      `https://source.unsplash.com/random/1000x400?hash=${Math.random()}`
     )
   }
 
