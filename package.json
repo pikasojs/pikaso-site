@@ -37,7 +37,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "typedoc": "npm run --prefix ../pikaso-library typedoc && rimraf public/api && cp -r ../pikaso-library/api public/api",
-    "predeploy": "npm run build && npm run build:docs && cp CNAME build/CNAME",
+    "predeploy": "npm run typedoc && npm run build && cp CNAME build/CNAME",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
