@@ -1,5 +1,4 @@
 import { Suspense, useState } from 'react'
-
 import {
   Box,
   AppBar,
@@ -9,9 +8,10 @@ import {
   Drawer
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
-import { Redirect, Route, Switch } from 'react-router'
+import { Redirect, Route, Switch, useLocation } from 'react-router'
 import { GitHub as GithubIcon } from '@mui/icons-material'
 import { useEffectOnce } from 'react-use'
+import { Giscus } from '@giscus/react'
 
 import { PageLoading } from 'src/components/PageLoading'
 
@@ -23,6 +23,7 @@ const drawerWidth = 300
 export function AppLayout() {
   const [pageTitle, setPageTitle] = useState('Pikaso - Documentation')
   const [mobileOpen, setMobileOpen] = useState(false)
+  const location = useLocation()
 
   const handleToggleDrawer = () => setMobileOpen(state => !state)
 
@@ -170,8 +171,19 @@ export function AppLayout() {
             border: '1px solid #ccc',
             borderRadius: '4px'
           }}
-          className="giscus"
-        ></Box>
+        >
+          <Giscus
+            key={location.pathname}
+            repo="pikasojs/pikaso"
+            repoId="MDEwOlJlcG9zaXRvcnkzMTIzMjI5ODA="
+            category="Documentation"
+            categoryId="DIC_kwDOEp2rpM4B_Wuh"
+            mapping="pathname"
+            reactionsEnabled="0"
+            emitMetadata="0"
+            theme="light"
+          />
+        </Box>
       </Box>
     </Box>
   )
