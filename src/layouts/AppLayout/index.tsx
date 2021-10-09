@@ -161,6 +161,17 @@ export function AppLayout() {
             </Switch>
           </Suspense>
         </div>
+
+        <Box
+          mt={15}
+          px={2}
+          py={2}
+          sx={{
+            border: '1px solid #ccc',
+            borderRadius: '4px'
+          }}
+          className="giscus"
+        ></Box>
       </Box>
     </Box>
   )
