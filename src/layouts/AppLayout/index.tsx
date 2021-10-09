@@ -10,8 +10,10 @@ import {
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import { Redirect, Route, Switch } from 'react-router'
-
+import { GitHub as GithubIcon } from '@mui/icons-material'
 import { useEffectOnce } from 'react-use'
+
+import { PageLoading } from 'src/components/PageLoading'
 
 import { LayoutDrawer } from './LayoutDrawer'
 import { RouterComponents } from '../../routes'
@@ -51,7 +53,14 @@ export function AppLayout() {
           ml: { sm: `${drawerWidth}px` }
         }}
       >
-        <Toolbar>
+        <Toolbar
+          style={{
+            backgroundColor: '#fff',
+            color: '#262626',
+            border: 'none',
+            boxShadow: 'none'
+          }}
+        >
           <IconButton
             color="inherit"
             aria-label="Open Drawer"
@@ -64,9 +73,26 @@ export function AppLayout() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
+          <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
             {pageTitle}
           </Typography>
+
+          <Box display="flex" alignItems="center">
+            <Box mr={1}>
+              <img src="https://img.shields.io/npm/dw/pikaso" />
+            </Box>
+
+            <Box mr={1}>
+              <img src="https://github.com/pikasojs/pikaso/workflows/Test/Build/Publish/badge.svg" />
+            </Box>
+
+            <IconButton
+              href="https://github.com/pikasojs/pikaso"
+              target="_blank"
+            >
+              <GithubIcon />
+            </IconButton>
+          </Box>
         </Toolbar>
       </AppBar>
 
@@ -118,7 +144,7 @@ export function AppLayout() {
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Toolbar />
         <div className="main-container">
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<PageLoading />}>
             <Switch>
               <Route exact path="/">
                 <Redirect to="/getting-started/pikaso" />
@@ -134,15 +160,6 @@ export function AppLayout() {
               ))}
             </Switch>
           </Suspense>
-
-          <div
-            id="cusdis_thread"
-            data-host="https://cusdis.com"
-            data-app-id="19d38444-d808-440f-80aa-88c9f1758a77"
-            data-page-id="{{ PAGE_ID }}"
-            data-page-url="{{ PAGE_URL }}"
-            data-page-title="{{ PAGE_TITLE }}"
-          ></div>
         </div>
       </Box>
     </Box>

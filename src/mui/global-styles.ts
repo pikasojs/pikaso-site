@@ -38,7 +38,7 @@ export const useGlobalStyle = makeStyles((theme: Theme) => ({
         padding: theme.spacing(1)
       }
     },
-    'a[target="_blank"]': {
+    '.main-container a[target="_blank"]': {
       '&::after': {
         fontSize: theme.spacing(1.5),
         content:
