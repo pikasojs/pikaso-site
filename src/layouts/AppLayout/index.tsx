@@ -178,7 +178,7 @@ export function AppLayout() {
             repoId="MDEwOlJlcG9zaXRvcnkzMTIzMjI5ODA="
             category="Documentation"
             categoryId="DIC_kwDOEp2rpM4B_Wuh"
-            mapping="pathname"
+            mapping="url"
             reactionsEnabled="0"
             emitMetadata="0"
             theme="light"
