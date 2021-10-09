@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-
 import { Box, TextField } from '@mui/material'
+import { useTitle } from 'react-use'
 import raw from 'raw.macro'
 
 import usePikaso from 'src/hooks/use-pikaso'
@@ -9,6 +9,7 @@ import { Markdown } from 'src/components/Markdown'
 const doc = raw('./doc.md')
 
 export default function Events() {
+  useTitle('Pikaso | Core Components | Shapes')
   const [events, setEvents] = useState<string[]>([])
 
   const [ref, editor] = usePikaso({

@@ -17,6 +17,7 @@
     "@types/react-dom": "^17.0.9",
     "axios": "^0.22.0",
     "classnames": "^2.3.1",
+    "gh-pages": "^3.2.3",
     "pikaso": "file:../pikaso-library",
     "raw.macro": "^0.4.2",
     "react": "^17.0.2",
@@ -34,7 +35,10 @@
     "start": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "typedoc": "npm run --prefix ../pikaso-library typedoc && rimraf public/api && cp -r ../pikaso-library/api public/api",
+    "predeploy": "npm run build && npm run build:docs && cp CNAME build/CNAME",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -70,6 +74,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^4.0.3",
+    "rimraf": "^3.0.2"
   }
 }

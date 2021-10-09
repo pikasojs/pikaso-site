@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Box } from '@mui/material'
 import { LabelModel } from 'pikaso'
+import { useTitle } from 'react-use'
 import raw from 'raw.macro'
 
 import usePikaso from 'src/hooks/use-pikaso'
@@ -11,6 +12,8 @@ import { Markdown } from 'src/components/Markdown'
 const doc = raw('./doc.md')
 
 export default function Label() {
+  useTitle('Pikaso | Core Components | Label')
+
   const [ref, editor] = usePikaso({
     selection: {
       transformer: {

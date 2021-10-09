@@ -1,6 +1,10 @@
+import { useTitle } from 'react-use'
+
 import { Markdown } from 'src/components/Markdown'
 
 export default function Omit() {
+  useTitle('Pikaso | Utilities | omit')
+
   return (
     <Markdown>
       {() => `

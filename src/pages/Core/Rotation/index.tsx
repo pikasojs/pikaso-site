@@ -1,16 +1,16 @@
 import { useEffect } from 'react'
 import { Box } from '@mui/material'
-
+import { useTitle } from 'react-use'
 import raw from 'raw.macro'
 
 import usePikaso from 'src/hooks/use-pikaso'
-
 import { Markdown } from 'src/components/Markdown'
 import { RangeSlider } from 'src/components/RangeSlider'
 
 const doc = raw('./doc.md')
 
 export default function Rotation() {
+  useTitle('Pikaso | Core Components | Rotation')
   const [ref, editor] = usePikaso({})
 
   useEffect(() => {

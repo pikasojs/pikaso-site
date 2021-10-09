@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-
+import { useTitle } from 'react-use'
 import { Box, Button } from '@mui/material'
 import raw from 'raw.macro'
 
@@ -13,6 +13,7 @@ import { getRandomColor } from 'src/utils/get-random-color'
 const doc = raw('./doc.md')
 
 export default function ImportExport() {
+  useTitle('Pikaso | Core Components | Import/Export')
   const [ref, editor] = usePikaso({
     selection: {
       transformer: {

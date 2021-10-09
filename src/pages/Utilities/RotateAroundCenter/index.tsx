@@ -1,6 +1,10 @@
+import { useTitle } from 'react-use'
+
 import { Markdown } from 'src/components/Markdown'
 
 export default function RotateAroundCenter() {
+  useTitle('Pikaso | Utilities | rotateAroundCenter')
+
   return (
     <Markdown>
       {() => `

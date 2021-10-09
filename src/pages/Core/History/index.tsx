@@ -1,8 +1,7 @@
-import { Box, Button, ButtonGroup } from '@mui/material'
-
-import raw from 'raw.macro'
-
 import { useEffect } from 'react'
+import { Box, Button, ButtonGroup } from '@mui/material'
+import { useTitle } from 'react-use'
+import raw from 'raw.macro'
 
 import usePikaso from 'src/hooks/use-pikaso'
 import { Markdown } from 'src/components/Markdown'
@@ -12,6 +11,7 @@ import { getRandomColor } from 'src/utils/get-random-color'
 const doc = raw('./doc.md')
 
 export default function History() {
+  useTitle('Pikaso | Core Components | History')
   const [ref, editor] = usePikaso({
     selection: {
       transformer: {

@@ -9,6 +9,7 @@ import {
 import { Pikaso } from 'pikaso'
 import { lazy, Suspense } from 'react'
 import { useParams, Switch, Route, Link } from 'react-router-dom'
+import { useTitle } from 'react-use'
 
 import { Markdown } from 'src/components/Markdown'
 
@@ -183,6 +184,7 @@ export const ShapesList = [
 ]
 
 export default function Shapes() {
+  useTitle('Pikaso | Core Components | Shapes')
   const { shape: selectedShape } = useParams<{
     shape?: string
   }>()

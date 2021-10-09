@@ -1,10 +1,14 @@
+import { useTitle } from 'react-use'
+
 import { Markdown } from 'src/components/Markdown'
 
 export default function GetRotatedPoint() {
+  useTitle('Pikaso | Utilities | getRotatedPoint')
+
   return (
     <Markdown>
       {() => `
-        # [getPointsDistance](/api/index.html#getPointsDistance)
+        # [getRotatedPoint](/api/index.html#getRotatedPoint)
 
         Calculates new position of the given point after rotating around the given angle.
 

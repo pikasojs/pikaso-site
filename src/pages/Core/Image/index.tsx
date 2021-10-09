@@ -1,15 +1,16 @@
 import { useEffect } from 'react'
 import { Button, Box } from '@mui/material'
+import { useTitle } from 'react-use'
 import raw from 'raw.macro'
 
 import usePikaso from 'src/hooks/use-pikaso'
-
 import { Markdown } from 'src/components/Markdown'
 import { getRandomNumber } from 'src/utils/get-random-number'
 
 const doc = raw('./doc.md')
 
 export default function Image() {
+  useTitle('Pikaso | Core Components | Image')
   const [ref, editor] = usePikaso({
     selection: {
       transformer: {

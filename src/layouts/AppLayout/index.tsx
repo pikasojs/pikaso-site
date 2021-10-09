@@ -20,14 +20,15 @@ const drawerWidth = 300
 
 export function AppLayout() {
   const [pageTitle, setPageTitle] = useState('Pikaso - Documentation')
-
   const [mobileOpen, setMobileOpen] = useState(false)
 
   const handleToggleDrawer = () => setMobileOpen(state => !state)
 
   useEffectOnce(() => {
     const observer = new MutationObserver(mutations => {
-      setPageTitle(mutations[0].target.textContent?.replace('|', ' - ') || '')
+      setPageTitle(
+        mutations[0].target.textContent?.replaceAll('|', ' — ') || ''
+      )
     })
 
     observer.observe(document.querySelector('title')!, {
@@ -133,6 +134,15 @@ export function AppLayout() {
               ))}
             </Switch>
           </Suspense>
+
+          <div
+            id="cusdis_thread"
+            data-host="https://cusdis.com"
+            data-app-id="19d38444-d808-440f-80aa-88c9f1758a77"
+            data-page-id="{{ PAGE_ID }}"
+            data-page-url="{{ PAGE_URL }}"
+            data-page-title="{{ PAGE_TITLE }}"
+          ></div>
         </div>
       </Box>
     </Box>

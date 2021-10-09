@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
-
 import { Button, Box } from '@mui/material'
+import { useTitle } from 'react-use'
 import raw from 'raw.macro'
 
 import usePikaso from 'src/hooks/use-pikaso'
@@ -9,6 +9,7 @@ import { Markdown } from 'src/components/Markdown'
 const doc = raw('./doc.md')
 
 export default function Filters() {
+  useTitle('Pikaso | Core Components | Filters')
   const [ref, editor] = usePikaso({
     selection: {
       transformer: {

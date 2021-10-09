@@ -1,17 +1,17 @@
 import { useEffect } from 'react'
 import { Box, ButtonGroup, Chip, IconButton } from '@mui/material'
-
 import FlipIcon from '@mui/icons-material/Flip'
+import { useTitle } from 'react-use'
 import raw from 'raw.macro'
 
 import usePikaso from 'src/hooks/use-pikaso'
-
 import { Markdown } from 'src/components/Markdown'
 import { BasePopover } from 'src/components/BasePopover'
 
 const doc = raw('./doc.md')
 
 export default function Flip() {
+  useTitle('Pikaso | Core Components | Flip')
   const [ref, editor] = usePikaso({})
 
   useEffect(() => {

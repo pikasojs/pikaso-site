@@ -151,7 +151,7 @@ export function ShapeModel({ type, codes, insertFn }: Props) {
   const handleRemoveFilter = () => {
     const shape = filterRef?.current?.editor?.board?.shapes.find(() => true)
 
-    shape?.removeFilter('Sepia')
+    shape?.removeFilter({ name: 'Sepia' })
   }
 
   return (

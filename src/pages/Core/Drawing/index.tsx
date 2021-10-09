@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Avatar, Box, Chip, IconButton, Tooltip } from '@mui/material'
+import { useTitle } from 'react-use'
 import raw from 'raw.macro'
 
 import usePikaso from 'src/hooks/use-pikaso'
@@ -81,6 +82,7 @@ const Drawings = {
 type DrawingType = keyof typeof Drawings
 
 export default function Drawing() {
+  useTitle('Pikaso | Core Components | Drawing')
   const [activeDrawing, setActiveDrawing] = useState<DrawingType>('pencil')
 
   const [ref, editor] = usePikaso({
