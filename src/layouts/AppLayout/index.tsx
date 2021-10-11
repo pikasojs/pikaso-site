@@ -1,4 +1,4 @@
-import { Suspense, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import {
   Box,
   AppBar,
@@ -26,6 +26,10 @@ export function AppLayout() {
   const location = useLocation()
 
   const handleToggleDrawer = () => setMobileOpen(state => !state)
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
 
   useEffectOnce(() => {
     const observer = new MutationObserver(mutations => {

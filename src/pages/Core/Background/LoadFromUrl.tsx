@@ -28,12 +28,12 @@ export function LoadFromUrl() {
 
   const handleLoadRandomBackground = () => {
     editor?.board.background.setImageFromUrl(
-      `https://source.unsplash.com/random/1000x400?hash=${Math.random()}`
+      `https://source.unsplash.com/random/600x400?hash=${Math.random()}`
     )
   }
 
   return (
-    <Accordion>
+    <Accordion expanded>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <Typography variant="h6" sx={{ width: '30%', flexShrink: 0 }}>
           loadFromUrl
@@ -47,8 +47,8 @@ export function LoadFromUrl() {
               style={{
                 margin: '0 auto',
                 background: '#f5f5f5',
-                width: '250px',
-                height: '250px'
+                width: '600px',
+                height: '400px'
               }}
             />
           </Box>

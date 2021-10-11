@@ -46,8 +46,8 @@ export function FillBackground() {
               style={{
                 margin: '0 auto',
                 background: '#f5f5f5',
-                width: '250px',
-                height: '250px'
+                width: '600px',
+                height: '400px'
               }}
             />
           </Box>
