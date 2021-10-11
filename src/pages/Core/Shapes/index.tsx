@@ -14,6 +14,7 @@ import { useTitle } from 'react-use'
 import { Markdown } from 'src/components/Markdown'
 
 import { EditorShape } from './EditorShape'
+import { SvgPath } from './ShapeModels/sampleCodes'
 
 export const ShapesList = [
   {
@@ -178,6 +179,20 @@ export const ShapesList = [
       editor.shapes.image.insert('/logo.svg', {
         x: 120,
         y: 70
+      })
+    }
+  },
+  {
+    title: 'Svg',
+    Component: lazy(() => import(`./ShapeModels/Svg`)),
+    insert: (editor: Pikaso) => {
+      editor.shapes.svg.insert({
+        data: SvgPath,
+        fill: '#262626',
+        x: 50,
+        y: 0,
+        scaleX: 1.25,
+        scaleY: 1.25
       })
     }
   }
