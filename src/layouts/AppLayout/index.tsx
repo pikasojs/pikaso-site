@@ -83,11 +83,15 @@ export function AppLayout() {
           </Typography>
 
           <Box display="flex" alignItems="center">
-            <Box mr={1}>
+            <Box display="flex" alignItems="center" mr={1}>
+              <img src="https://img.shields.io/npm/v/pikaso?label=Latest%20Version" />
+            </Box>
+
+            <Box display="flex" alignItems="center" mr={1}>
               <img src="https://img.shields.io/npm/dw/pikaso" />
             </Box>
 
-            <Box mr={1}>
+            <Box display="flex" alignItems="center" mr={1}>
               <img src="https://github.com/pikasojs/pikaso/workflows/Test/Build/Publish/badge.svg" />
             </Box>
 
