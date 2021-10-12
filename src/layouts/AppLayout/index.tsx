@@ -84,7 +84,11 @@ export function AppLayout() {
 
           <Box display="flex" alignItems="center">
             <Box display="flex" alignItems="center" mr={1}>
-              <img src="https://img.shields.io/npm/v/pikaso?label=Latest%20Version" />
+              <img src="https://img.shields.io/npm/v/pikaso?label=latest%20version" />
+            </Box>
+
+            <Box display="flex" alignItems="center" mr={1}>
+              <img src="https://img.shields.io/github/issues-raw/pikasojs/pikaso" />
             </Box>
 
             <Box display="flex" alignItems="center" mr={1}>
