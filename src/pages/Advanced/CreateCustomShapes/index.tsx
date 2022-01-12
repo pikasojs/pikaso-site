@@ -16,7 +16,7 @@ interface Shapes extends BaseShapes {
 }
 
 export default function CreateCustomShapes() {
-  useTitle('Pikaso | Customization | Create Custom Shapes')
+  useTitle('Pikaso | Advanced | Create Custom Shapes')
 
   const [ref, editor] = usePikaso<Shapes>(
     {

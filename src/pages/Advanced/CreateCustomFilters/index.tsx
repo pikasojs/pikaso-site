@@ -9,7 +9,7 @@ import { Markdown } from 'src/components/Markdown'
 const doc = raw('./doc.md')
 
 export default function CreateCustomFilters() {
-  useTitle('Pikaso | Customization | Create Custom Filters')
+  useTitle('Pikaso | Advanced | Create Custom Filters')
 
   const [ref, editor] = usePikaso({
     selection: {
