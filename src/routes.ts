@@ -109,17 +109,17 @@ export const Routes: Routes = {
       }
     ]
   },
-  Customization: {
-    title: 'Customization',
+  Advanced: {
+    title: 'Advanced',
     Icon: SettingsIcon,
     links: [
       {
         title: 'Create Custom Shapes',
-        url: '/customization/create-custom-shapes'
+        url: '/advanced/create-custom-shapes'
       },
       {
         title: 'Create Custom Filter',
-        url: '/customization/create-custom-filters'
+        url: '/advanced/create-custom-filters'
       }
       // {
       //   title: 'Crop Transformer Auto Color',

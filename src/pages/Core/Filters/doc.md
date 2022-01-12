@@ -7,7 +7,7 @@ Filters are the best way to add visual effects to [Background](/api/classes/Back
 
 ### Create Custom Filters
 
-[Read More](/customization/create-custom-filters)
+[Read More](/advanced/create-custom-filters)
 
 ```ts
 // Adds Blur effect to background image
