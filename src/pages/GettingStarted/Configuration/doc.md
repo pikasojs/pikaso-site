@@ -52,6 +52,7 @@ It is possible to initialize the editor with predefined settings and later overr
     }
   },
   drawing: {
+    autoSelect: false,
     keyboard: {
       cancelOnEscape: true
     }
