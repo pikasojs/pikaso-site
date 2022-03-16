@@ -29,24 +29,24 @@ export default function SnapGrid() {
       return
     }
 
-    const shapes = [
+    const panda = [
       editor.shapes.circle.insert({
         fill: 'black',
         radius: 30,
-        x: 550,
+        x: 350,
         y: 150
       }),
       editor.shapes.circle.insert({
         fill: 'black',
         radius: 30,
-        x: 650,
+        x: 450,
         y: 150
       }),
       editor.shapes.circle.insert({
         fill: 'red',
         radius: 70,
         stroke: '#262626',
-        x: 600,
+        x: 400,
         y: 200
       }),
       editor.shapes.circle.insert({
@@ -54,7 +54,7 @@ export default function SnapGrid() {
         strokeWidth: 9,
         stroke: 'orange',
         radius: 10,
-        x: 630,
+        x: 430,
         y: 180
       }),
       editor.shapes.circle.insert({
@@ -62,12 +62,62 @@ export default function SnapGrid() {
         strokeWidth: 10,
         stroke: 'orange',
         radius: 11,
-        x: 570,
+        x: 370,
         y: 180
       })
     ]
 
-    editor.board.groups.attach(shapes, 'g1')
+    const fox = [
+      editor.shapes.triangle.insert({
+        fill: 'orange',
+        radius: 45,
+        stroke: '#262626',
+        x: 600,
+        y: 150
+      }),
+      editor.shapes.triangle.insert({
+        fill: 'orange',
+        radius: 45,
+        stroke: '#262626',
+        x: 700,
+        y: 150
+      }),
+      editor.shapes.circle.insert({
+        fill: 'orange',
+        radius: 70,
+        stroke: '#262626',
+        x: 650,
+        y: 200
+      }),
+      editor.shapes.circle.insert({
+        fill: '#262626',
+        strokeWidth: 9,
+        stroke: 'red',
+        radius: 10,
+        x: 680,
+        y: 180
+      }),
+      editor.shapes.circle.insert({
+        fill: '#262626',
+        strokeWidth: 10,
+        stroke: 'red',
+        radius: 11,
+        x: 620,
+        y: 180
+      }),
+      editor.shapes.triangle.insert({
+        fill: 'red',
+        radius: 15,
+        x: 650,
+        y: 220
+      })
+    ]
+
+    fox[0].rotate(80)
+    fox[1].rotate(-80)
+
+    editor.board.groups.attach(fox, 'fox')
+    editor.board.groups.attach(panda, 'panda')
   }, [editor])
 
   return (
