@@ -1,12 +1,6 @@
 import { useState } from 'react'
-import {
-  Box,
-  Avatar,
-  Chip,
-  Slider,
-  SliderProps,
-  SliderThumb
-} from '@mui/material'
+import { Box, Avatar, Chip, Slider, SliderThumb } from '@mui/material'
+import type { SliderProps } from '@mui/material/Slider'
 
 import { styled } from '@mui/styles'
 import type { Theme } from '@mui/material'

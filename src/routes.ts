@@ -72,8 +72,16 @@ export const Routes: Routes = {
         url: '/core/label'
       },
       {
+        title: 'Groups',
+        url: '/core/groups'
+      },
+      {
         title: 'Drawing',
         url: '/core/drawing'
+      },
+      {
+        title: 'Snap To Grid',
+        url: '/core/snap-grid'
       },
       {
         title: 'Cropper',
