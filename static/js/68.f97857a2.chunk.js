@@ -1,2 +1,0 @@
-(this["webpackJsonppikaso-documentation"]=this["webpackJsonppikaso-documentation"]||[]).push([[68],{185:function(t,a,i){"use strict";i.r(a),a.default=i.p+"static/media/doc.883daa2e.md"}}]);
-//# sourceMappingURL=68.f97857a2.chunk.js.map

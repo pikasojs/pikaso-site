@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpikaso_documentation=self.webpackChunkpikaso_documentation||[]).push([[5945],{5945:function(a,e,t){a.exports=t.p+"static/media/doc.883daa2e1f7bb609c76a.md"}}]);

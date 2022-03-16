@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpikaso_documentation=self.webpackChunkpikaso_documentation||[]).push([[7361],{77361:function(e,n,t){t.r(n),t.d(n,{default:function(){return r}});var s=t(20406),i=t(80184),o={insert:"editor.shapes.line.insert({\n  points: [50, 50, 300, 50],\n  stroke: 'blue',\n  strokeWidth: 10\n})"};function r(){return(0,i.jsx)(s.ShapeModel,{type:"Line",codes:o,insertFn:function(e){return e.shapes.line.insert({points:[250,150,600,150],stroke:"blue",strokeWidth:10})}})}}}]);
+//# sourceMappingURL=7361.3aed43a1.chunk.js.map

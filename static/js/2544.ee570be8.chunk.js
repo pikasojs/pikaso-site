@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpikaso_documentation=self.webpackChunkpikaso_documentation||[]).push([[2544],{22544:function(n,t,e){e.r(t),e.d(t,{default:function(){return u}});var o=e(20406),i=e(57408),s=e(80184),r={insert:"editor.shapes.polygon.insert({\n  radius: 100,\n  sides: 5,\n  x: 100,\n  y: 150,\n  fill: 'tomato'\n})"};function u(){var n;return(0,s.jsx)(o.ShapeModel,{type:"Polygon",codes:r,insertFn:null===(n=i.ShapesList.find((function(n){return"Polygon"===n.title})))||void 0===n?void 0:n.insert})}}}]);
+//# sourceMappingURL=2544.ee570be8.chunk.js.map

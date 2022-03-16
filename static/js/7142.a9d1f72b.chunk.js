@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpikaso_documentation=self.webpackChunkpikaso_documentation||[]).push([[7142],{87142:function(n,e,t){t.r(e),t.d(e,{default:function(){return o}});var i=t(20406),r=t(57408),s=t(80184),a={insert:"editor.shapes.triangle.insert({\n  radius: 100,\n  x: 100,\n  y: 150,\n  fill: 'tomato'\n})"};function o(){var n;return(0,s.jsx)(i.ShapeModel,{type:"Triangle",codes:a,insertFn:null===(n=r.ShapesList.find((function(n){return"Triangle"===n.title})))||void 0===n?void 0:n.insert})}}}]);
+//# sourceMappingURL=7142.a9d1f72b.chunk.js.map
