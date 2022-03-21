@@ -22,7 +22,6 @@ const editor = new Pikaso({
       }
     },
     transformer: {
-      borderDash: [15, 10],
       borderStroke: '#fff',
       borderStrokeWidth: 3,
       anchorSize: 15,
