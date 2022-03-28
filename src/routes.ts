@@ -84,6 +84,10 @@ export const Routes: Routes = {
         url: '/core/snap-grid'
       },
       {
+        title: 'Measurement Tag',
+        url: '/core/measurement-tag'
+      },
+      {
         title: 'Cropper',
         url: '/core/cropper'
       },
