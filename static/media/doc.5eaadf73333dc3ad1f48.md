@@ -16,6 +16,6 @@ editor.export.toImage({
 // export to json
 editor.export.toJson()
 
-// export to json format
+// import json
 editor.load('<json string>') // or editor.import.json('<parsed json>')
 ```
