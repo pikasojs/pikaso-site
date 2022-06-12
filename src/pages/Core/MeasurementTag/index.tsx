@@ -9,7 +9,7 @@ import { ReleaseBanner } from 'src/components/ReleaseBanner'
 const doc = raw('./doc.md')
 
 export default function Rotation() {
-  useTitle('Pikaso | Core Components | Rotation')
+  useTitle('Pikaso | Core Components | Measurement Tag')
   const [ref, editor] = usePikaso({
     measurement: {
       background: {
