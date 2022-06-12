@@ -4,6 +4,7 @@ import raw from 'raw.macro'
 
 import usePikaso from 'src/hooks/use-pikaso'
 import { Markdown } from 'src/components/Markdown'
+import { ReleaseBanner } from 'src/components/ReleaseBanner'
 
 const doc = raw('./doc.md')
 
@@ -46,6 +47,7 @@ export default function Rotation() {
 
   return (
     <>
+      <ReleaseBanner text="New as of v2.5.0" />
       <Markdown>{doc}</Markdown>
 
       <div

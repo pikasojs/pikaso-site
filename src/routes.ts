@@ -126,6 +126,10 @@ export const Routes: Routes = {
     Icon: SettingsIcon,
     links: [
       {
+        title: 'NodeJs',
+        url: '/advanced/nodejs'
+      },
+      {
         title: 'Create Custom Shapes',
         url: '/advanced/create-custom-shapes'
       },

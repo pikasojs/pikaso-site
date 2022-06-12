@@ -5,6 +5,7 @@ import raw from 'raw.macro'
 
 import usePikaso from 'src/hooks/use-pikaso'
 import { Markdown } from 'src/components/Markdown'
+import { ReleaseBanner } from 'src/components/ReleaseBanner'
 
 const doc = raw('./doc.md')
 
@@ -122,6 +123,8 @@ export default function SnapGrid() {
 
   return (
     <div>
+      <ReleaseBanner text="New as of v2.4.0" />
+
       <Markdown>{doc}</Markdown>
 
       <Box mb={3}>
