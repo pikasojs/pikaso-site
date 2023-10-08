@@ -7,6 +7,8 @@ import {
   Typography,
   Drawer
 } from '@mui/material'
+import { Adsense } from '@ctrl/react-adsense'
+
 import MenuIcon from '@mui/icons-material/Menu'
 import { Redirect, Route, Switch, useLocation } from 'react-router'
 import { GitHub as GithubIcon } from '@mui/icons-material'
@@ -156,6 +158,14 @@ export function AppLayout() {
       </Box>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Toolbar />
+
+        <Adsense
+          client="ca-pub-7238314139305028"
+          slot="8202500675"
+          style={{ display: 'block' }}
+          format="auto"
+        />
+
         <div className="main-container">
           <Suspense fallback={<PageLoading />}>
             <Switch>
@@ -174,6 +184,13 @@ export function AppLayout() {
             </Switch>
           </Suspense>
         </div>
+
+        <Adsense
+          client="ca-pub-7238314139305028"
+          slot="1357890728"
+          style={{ display: 'block' }}
+          format="auto"
+        />
 
         <Box
           mt={15}
