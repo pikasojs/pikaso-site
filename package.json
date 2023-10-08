@@ -36,7 +36,7 @@
   "scripts": {
     "start": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "cp ./Ads.txt ./build",
+    "postbuild": "cp ./ads.txt ./build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "typedoc": "npm run --prefix ../pikaso-library typedoc && rimraf public/api && cp -r ../pikaso-library/api public/api",
