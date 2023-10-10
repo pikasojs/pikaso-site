@@ -159,12 +159,14 @@ export function AppLayout() {
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Toolbar />
 
-        {/* <Adsense
-          client="ca-pub-7238314139305028"
-          slot="8202500675"
-          style={{ display: 'block' }}
-          format="auto"
-        /> */}
+        <Box my={2}>
+          <Adsense
+            client="ca-pub-7238314139305028"
+            slot="8202500675"
+            style={{ display: 'block' }}
+            format="auto"
+          />
+        </Box>
 
         <div className="main-container">
           <Suspense fallback={<PageLoading />}>
@@ -185,14 +187,14 @@ export function AppLayout() {
           </Suspense>
         </div>
 
-        <Box my={2}>
+        {/* <Box my={2}>
           <Adsense
             client="ca-pub-7238314139305028"
             slot="1357890728"
             style={{ display: 'block' }}
             format="auto"
           />
-        </Box>
+        </Box> */}
 
         <Box
           mt={15}
