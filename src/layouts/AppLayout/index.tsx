@@ -7,7 +7,7 @@ import {
   Typography,
   Drawer
 } from '@mui/material'
-import { Adsense } from '@ctrl/react-adsense'
+// import { Adsense } from '@ctrl/react-adsense'
 
 import MenuIcon from '@mui/icons-material/Menu'
 import { Redirect, Route, Switch, useLocation } from 'react-router'
@@ -159,14 +159,14 @@ export function AppLayout() {
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <Toolbar />
 
-        <Box my={2}>
+        {/* <Box my={2}>
           <Adsense
             client="ca-pub-7238314139305028"
             slot="8202500675"
             style={{ display: 'block' }}
             format="auto"
           />
-        </Box>
+        </Box> */}
 
         <div className="main-container">
           <Suspense fallback={<PageLoading />}>
